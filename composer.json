@@ -26,8 +26,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Niyama\\FileManager\\Providers\\FileManagerServiceProvider"
-            ]
+                "Niyama\\FileManager\\FileManagerServiceProvider"
+            ],
+            "aliases": {
+                "FileManager": "Niyama\\FileManager\\Facades"
+            }
         }
+    },
+    "scripts": {
+        "test" : [
+            "vendor/bin/phpunit"
+        ]
     }
 }

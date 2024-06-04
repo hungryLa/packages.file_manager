@@ -3,13 +3,14 @@
 namespace Niyama\FileManager\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Niyama\FileManager\Services\TestService;
+use Niyama\FileManager\Services\FileManagerService;
 
-class Test extends Facade
+class FileManager extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return TestService::class;
+        return FileManagerService::class;
     }
+
 
 }

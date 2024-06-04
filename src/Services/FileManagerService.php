@@ -2,7 +2,7 @@
 
 namespace Niyama\FileManager\Services;
 
-class TestService
+class FileManagerService
 {
     public function sum(int|float $a, int|float $b): int|float
     {

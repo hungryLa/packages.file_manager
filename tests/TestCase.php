@@ -2,7 +2,7 @@
 
 namespace Niyama\FileManager\Tests;
 
-use Niyama\FileManager\Providers\FileManagerServiceProvider;
+use Niyama\FileManager\FileManagerServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
