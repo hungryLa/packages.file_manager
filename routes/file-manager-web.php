@@ -5,6 +5,7 @@ use Niyama\FileManager\Http\Controllers\FileManagerController;
 
 Route::group(['prefix' => 'file-manager'], function (){
 
-    Route::get('hello', [FileManagerController::class, 'index']);
+    Route::get('index', [FileManagerController::class, 'index'])
+        ->name('file-manager.index');
 
 });
