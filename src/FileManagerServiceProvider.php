@@ -9,12 +9,15 @@ class FileManagerServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->bind(FileManagerService::class, FileManagerService::class);
+
     }
 
     public function boot(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/../routes/file-manager-web.php');
+        $this->publishes([
+            __DIR__. '/../config/file-manager.php' => config_path('file-manager.php'),
+        ]);
+        $this->loadRoutesFrom(__DIR__ . '/../routes/file-manager.php');
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 }
